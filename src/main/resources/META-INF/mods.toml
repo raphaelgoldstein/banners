@@ -1,0 +1,28 @@
+modLoader="javafml" #mandatory
+loaderVersion="[31,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+issueTrackerURL="http://my.issue.tracker/" #optional
+
+[[mods]] #mandatory
+modId="tha_banners" #mandatory
+version="1.0" #mandatory
+displayName="TheHealingAngel's Banner Mod" #mandatory
+# updateJSONURL="http://myurl.me/" #optional
+# displayURL="http://example.com/" #optional
+#logoFile="examplemod.png" #optional
+credits="Thanks for helping with bugs goes to Commoble and Subaraki" #optional
+authors="Raphael Goldstein" #optional
+description='''This mod adds all sort of cool stuff to make banners a better feature in the game.'''
+
+[[dependencies.examplemod]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[31,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
