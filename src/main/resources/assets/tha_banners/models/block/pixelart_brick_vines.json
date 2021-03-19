@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "enhancedbanners:block/pixelart_brick",
-    "side": "enhancedbanners:block/pixelart_brick_vines"
+    "end": "tha_banners:block/pixelart_brick",
+    "side": "tha_banners:block/pixelart_brick_vines"
   }
 }

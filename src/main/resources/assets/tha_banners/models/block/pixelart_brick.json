@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "enhancedbanners:block/pixelart_brick"
+    "all": "tha_banners:block/pixelart_brick"
   }
 }

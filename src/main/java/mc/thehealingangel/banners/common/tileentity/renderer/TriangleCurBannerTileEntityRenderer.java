@@ -22,11 +22,14 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class TriangleCurBannerTileEntityRenderer extends TileEntityRenderer<TriangleCutBannerTileEntity>
 {
     public static final ResourceLocation BANNER_TEXTURE = new ResourceLocation("tha_banners:entity/triangle_cut_banner_base");
+    public static final Map PATTERN_LOCATIONS = new HashMap<>();
 
     public ModelRenderer poleHead;
     public ModelRenderer pole;
@@ -116,7 +119,7 @@ public class TriangleCurBannerTileEntityRenderer extends TileEntityRenderer<Tria
         for(int i = 0; i < 17 && i < list.size(); ++i)
         {
             Pair<BannerPattern, DyeColor> pair = list.get(i);
-            ResourceLocation pattern = new ResourceLocation("tha_banners", pair.getFirst().func_226957_a_(true).getPath().replaceFirst("banner","triangle_cut_banner"));
+            ResourceLocation pattern = new ResourceLocation(pair.getFirst().func_226957_a_(true).getPath().replaceFirst("banner","triangle_cut_banner"));
             float[] rgba = pair.getSecond().getColorComponentValues();
             Material material = new Material(flag ? Atlases.BANNER_ATLAS : Atlases.SHIELD_ATLAS, pattern);
             renderer.render(stack, material.getBuffer(buffer, RenderType::getEntityNoOutline), packedLightIn, packedOverlayIn, rgba[0], rgba[1], rgba[2], 1.0F);

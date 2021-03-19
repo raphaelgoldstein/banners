@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "enhancedbanners:block/pixelart_brick"
+      "model": "tha_banners:block/pixelart_brick"
     }
   }
 }
